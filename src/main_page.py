@@ -171,7 +171,7 @@ class MainPage(QMainWindow):
                 ortalama = toplam_puan / kredi_toplam
 
 
-        self.second_page.display_gpa(str(ortalama))
+        self.second_page.display_gpa(str("{:.2f}".format(ortalama)))
         self.second_page.show()
 
 
